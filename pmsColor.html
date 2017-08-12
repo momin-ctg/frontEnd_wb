@@ -8,7 +8,7 @@
     <title>Home Page</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular.js"></script>
     <script src="js/controller.js"></script>
 
 
@@ -152,7 +152,7 @@
             font-weight: 900;
         }
 
-        #pmsColor .col-md-2 {
+        #pmsColors .col-md-2 {
             margin-bottom: 15px;
         }
 
@@ -168,7 +168,7 @@
     <div class="row">
 
         <div class="col-md-4 col-md-offset-4">
-            <a data-toggle="modal" data-target="#pmsColor">
+            <a data-toggle="modal" data-target="#pmsColors">
 
                 <div class="colorChart" style="background: #ffffff">
 
@@ -189,7 +189,7 @@
         </div>
 
 
-        <div class="modal fade" id="pmsColor" ng-app="colorApp">
+        <div class="modal fade" id="pmsColors" ng-app="colorApp">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -209,33 +209,29 @@
                         </div>
                     </div>
 
-                    <div class="modal-body" ng-controller="pmsColor"  style="height: 600px;overflow-x: scroll">
+                    <div class="modal-body" ng-controller="pmsColor" style="height: 600px;overflow-x: scroll">
 
 
+                        <!--PMS Color Chart-->
 
-                                <!--PMS Color Chart-->
-                                <div class="row"  ng-repeat="color in colors | filter:colorSearch">
-                                    <div class="col-md-2">
-
-
-
-                                            <div class="colorArea" style="border:1px solid #dddddd">
-                                                <div class="pmsColor_text text-center">
-                                                    <p> {{color.code}} </p>
-                                                </div>
-                                                <div class="pmsColor_Support" ng-style=" { 'background': '{{color.hcolor}}' } "
-                                                     style="width: 100%; height: 80px; display:block;">
-                                                </div>
-                                            </div>
+                        <div ng-repeat="color in colors | filter:colorSearch">
+                            <div class="col-md-2">
 
 
-
+                                <div class="colorArea" style="border:1px solid #dddddd">
+                                    <div class="pmsColor_text text-center">
+                                        <p> {{color.code}} </p>
+                                    </div>
+                                    <div class="pmsColor_Support" ng-style=" { 'background': '{{color.hcolor}}' } "
+                                         style="width: 100%; height: 80px; display:block;">
                                     </div>
                                 </div>
-                                <!--End PMS Color-->
 
 
+                            </div>
+                        </div>
 
+                        <!--End PMS Color-->
 
 
                     </div>
