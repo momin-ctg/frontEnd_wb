@@ -158,6 +158,55 @@
 
         /*End Style For Top Ten Slider*/
 
+        /*style for search*/
+
+        .colorArea{
+            -webkit-box-shadow: 0 0 1px  rgba(0,0,0,0.2);
+            -moz-box-shadow: 0 0 1px  rgba(0,0,0,0.2);
+            box-shadow: 0 0 1px  rgba(0,0,0,0.2);
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .search-box {
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+            background-color: #f2f2f2;
+            height: 40px;
+            position: relative;
+        }
+
+        .search-icon {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            float: left;
+            width: 32px;
+            height: 40px;
+            color: #999;
+            font-size: 1.3em;
+            padding: 7px 15px;
+        }
+
+        .search-input {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            width: 368px;
+            height: 40px;
+            float: right;
+            background-color: transparent;
+            border: 0px;
+            padding: 10px;
+            text-transform: uppercase;
+            font-family: "Roboto", Arial, sans-serif;
+            font-size: 1em;
+            position: relative;
+            outline: 0px;
+        }
+
+
     </style>
 
 </head>
@@ -195,27 +244,23 @@
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 
-                        <div class="col-sm-6 col-sm-offset-3">
-                            <div id="imaginary_container">
-                                <div class="input-group">
-                                    <input type="text" class="form-control" placeholder="Search" ng-model="colorSearch">
-                                    <span class="input-group-addon">
-                                        <button type="submit">
-                                            <span class="glyphicon glyphicon-search"></span>
-                                        </button>
-                                    </span>
+                            <div class="col-md-6 col-sm-offset-3">
+                                <div class="search-box">
+                                    <div class="search-icon"><i class="fa fa-search"></i></div>
+                                    <input ng-model="colorSearch" class="search-input" id="search" type="text"
+                                           placeholder="Search Color"/>
+                                    <ul class="search-results" id="results"></ul>
                                 </div>
                             </div>
-                        </div>
+
                     </div>
 
-                    <div class="modal-body" ng-controller="pmsColor" style="height: 600px;overflow-x: scroll">
-
+                    <div class="modal-body" ng-controller="pmsColor" style="height: 600px; overflow-x: scroll">
 
                         <!--PMS Color Chart-->
 
                         <div ng-repeat="color in colors | filter:colorSearch">
-                            <div class="col-md-2">
+                            <div class="col-md-2 col-xs-4">
 
 
                                 <div class="colorArea" style="border:1px solid #dddddd">
@@ -223,7 +268,7 @@
                                         <p> {{color.code}} </p>
                                     </div>
                                     <div class="pmsColor_Support" ng-style=" { 'background': '{{color.hcolor}}' } "
-                                         style="width: 100%; height: 80px; display:block;">
+                                         style="width: 100%; height: 50px; display:block;">
                                     </div>
                                 </div>
 

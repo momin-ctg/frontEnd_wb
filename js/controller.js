@@ -14,7 +14,7 @@ var pmsFile = {
             "hcolor": "#f4ed47"
         },
         {
-            "code": "Pantone Yelloow",
+            "code": "Pantone Yellow",
             "hcolor": "#f9e814"
         },
         {
