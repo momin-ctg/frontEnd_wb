@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta charset="UTF-8">
+	<title>Home Page</title>
+ <!--  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <style>
+   
+
+
+.address{
+  background: #efefef;
+  min-height: 120px;
+  border:1px solid #cccccc;
+}
+
+.iconbar{
+  border-bottom: 1px solid #cccccc;
+  min-height: 45px;
+}
+
+.iconbar ul{
+  margin: 0;
+  padding: 0;
+}
+
+.iconbar li{
+  list-style: none;
+  float: left;
+  display:inline-block;
+  padding-left: 10px;
+}
+
+
+.iconbar li:last-child {
+  position: absolute;
+  right: 18px;
+  top: 0px;
+  border-left: 1px solid #cccccc;
+  padding: 13px;
+}
+
+.iconbar li:first-child {
+  position: relative;
+  
+}
+
+.addressText address{
+    padding:  10px 0 0 10px;
+    color: #424242;
+}
+
+.home_gallery img{
+    display: block;
+    margin:auto;
+}
+
+.home_galleryText p{
+
+  color: #6c6a6b;
+  line-height: 1;
+  font-style: italic;
+
+}
+
+.colorChart h4{
+   color: #6c6a6b;
+   font-size: 26px;
+}
+
+.color_chartText p{
+   color: #6c6a6b;
+  line-height: 1;
+  font-style: italic;
+  font-size: 12px;
+}
+
+
+
+
+  </style>
+
+</head>
+<body style="background: #f2f2f2">
+
+
+    <div class="container">
+      <div class="row">
+       
+
+
+        <div class="col-md-4 col-md-offset-3" style="background: #ffffff;">
+         <div class="address">
+           <div class="iconbar">
+             <ul>
+               <li><i class="fa">
+               <img src="map.png" alt="map_uscraft"></i>
+               </li>
+               <li><i class="fa fa-pencil"></i></li>
+             </ul>
+           </div>  
+           <div class="addressText">
+             <address>
+              Eugene Johnson <br/>
+
+              (479) 967-2128 <br/>
+
+              2896 Howell Rd, Russellville, AR, 72823
+             </address>
+           </div>
+         </div>
+        </div>
+
+        
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+        <p id="demo">
+          Text will be load here.........
+        </p>
+          <button onclick="textLoad()" class="btn btn-success btn-md">Load The Text</button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+        function textLoad(){
+          var xhr = new XMLHttpRequest();
+
+
+
+          xhr.onreadystatechange = function(){
+            if(this.readyState == 4 && this.status == 200){
+              document.getElementById("demo").innerHTML = this.responseText;
+
+            }
+          };
+
+          xhr.open('GET', 'http://localhost/ajax/demo.txt', true);
+          xhr.send();
+             
+        }
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 	<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+</body>
+</html>

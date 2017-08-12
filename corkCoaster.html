@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>Cork Coaster</title>
+
+
+    <style>
+        .corkCoaster_header img {
+            border-radius: 5px;
+        }
+
+        .rCork_image img {
+            display: block;
+            margin: 0 auto;
+        }
+
+        .rCork_area {
+            padding: 15px;
+            display: block;
+        }
+
+        .rCork_description h2 {
+            font-style: italic;
+            color: #5b5757;
+            font-weight: 500;
+        }
+
+        .rCork_description p {
+            color: #5b5757;
+            font-weight: bold;
+
+        }
+
+        .cork_btn {
+            margin-top: 15px;
+        }
+
+        .cork_btn a {
+            background: #4bb749;
+            padding: 5px 12px;
+            border-radius: 4px;
+            font-size: 22px;
+            font-weight: 600;
+            color: #ffffff;
+            font-style: italic;
+            display: inline-block;
+        }
+
+        .cork_btn a:hover {
+            text-decoration: none;
+        }
+
+        .rCork_details ul {
+            display: block;
+            margin: 0;
+            padding: 0;
+        }
+
+        .rCork_details ul li {
+            list-style: none;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        .rCork_details ul li span {
+            font-weight: 600;
+            display: inline;
+        }
+
+        .left_row {
+            float: right;
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+    </style>
+    <script>
+        $(document).ready(function() {
+
+            $("#myModal").on("show.bs.modal", function(e) {
+                var link = $(e.relatedTarget);
+                $(this).find(".modal-body").load(link.attr("href"));
+            });
+
+
+            $(".closeModal").click(function () {
+                $(".modal").modal("hide");
+            });
+        });
+    </script>
+
+</head>
+<body style="background:#f2f2f2">
+<div class="container" style="background:#ffffff">
+
+
+    <div class="corkCoaster_area"> <!--Start Cork Coaster Area-->
+
+        <!--Start Cork Header Image-->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="corkCoaster_header">
+                    <img src="ck/cork_header.jpg" alt="cork_coaster" class="img-responsive">
+                </div>
+            </div>
+        </div>
+        <!--End Cork Header Image-->
+
+
+        <!--Start Round Cork Coaster-->
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="row"
+                     style="border: 1px solid #bbbbbb;margin: 10px 2px; border-radius: 4px;padding: 30px 0;">
+
+                    <div class="rCork_area">
+                        <div class="col-md-6 col-xs-12">
+                            <div class="rCork_image">
+                                <img class="img-responsive" src="ck/round.jpg" alt="Cork_Coaster_uscraft">
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-xs-12">
+                            <div class="rCork_description">
+                                <h2>Round Cork Coaster</h2>
+                                <p>This is most popular size. it will come 4inch x 4inch round size.You can use your
+                                    round
+                                    logo fully fitted on coaster</p>
+                            </div>
+
+                            <div class="rCork_details">
+                                <div class="table-responsive">
+                                    <table cellpadding="20">
+                                        <tr>
+                                            <td class="left_row" style="font-weight:600;">Size :</td>
+                                            <td style="font-weight:bold;"> 4 in X 4 in</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="left_row" style="font-weight:600;">Thickness :</td>
+                                            <td style="font-weight:bold;"> 3mm</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="left_row" style="font-weight:600;">Imprint Type :</td>
+                                            <td style="font-weight:bold;"> Single Color Screen Printed</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="left_row" style="font-weight:600;">Packing :</td>
+                                            <td style="font-weight:bold;"> Bulk</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="left_row" style="font-weight:600;">MOQ :</td>
+                                            <td style="font-weight:bold;"> 50Pcs</td>
+                                        </tr>
+                                    </table>
+
+                                </div>
+
+                                <div class="cork_btn">
+                                    <a data-toggle="modal" data-target="#myModal">Inquiry Now</a>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--End Round Cork Coaster-->
+
+
+        <!--Start Square Cork Coaster-->
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="row"
+                     style="border: 1px solid #bbbbbb; margin: 10px 2px; border-radius: 4px;padding: 30px 0;">
+
+                    <div class="col-md-6 col-xs-12">
+                        <div class="rCork_image">
+                            <img class="img-responsive" src="ck/cork-a.jpg" alt="Cork_Coaster_uscraft">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-xs-12">
+                        <div class="rCork_description">
+                            <h2>Square Cork Coaster</h2>
+                            <p>This is most popular size. it will come 4inch x 4inch round size.You can use your round
+                                logo fully fitted on coaster</p>
+                        </div>
+
+                        <div class="rCork_details">
+
+
+                            <div class="table-responsive">
+                                <table cellpadding="20">
+                                    <tr>
+                                        <td class="left_row" style="font-weight:600;">Size :</td>
+                                        <td style="font-weight:bold;"> 4 in X 4 in</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="left_row" style="font-weight:600;">Thickness :</td>
+                                        <td style="font-weight:bold;"> 3mm</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="left_row" style="font-weight:600;">Imprint Type :</td>
+                                        <td style="font-weight:bold;"> Single Color Screen Printed</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="left_row" style="font-weight:600;">Packing :</td>
+                                        <td style="font-weight:bold;"> Bulk</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="left_row" style="font-weight:600;">MOQ :</td>
+                                        <td style="font-weight:bold;"> 50Pcs</td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <div class="cork_btn">
+                                <a href="">Inquiry Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--End Square Cork Coaster-->
+
+        <!--Modal Window-->
+        <div id="myModal" class="modal fade" role="dialog" style="margin-top: 100px;">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Product Inquiry</h4>
+                    </div>
+                    <div class="modal-body inquirybox">
+
+                        <form enctype="multipart/form-data" method="post">
+                            <div class="row">
+                                <div class="col-xs-7" id="formInputs">
+                                    <div id="messageSuccessId" class="messageSuccess isa_success"><i
+                                            class="fa fa-check"></i>We received your inquiry. Thank you!
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-4">
+                                            <strong>Name <span style="color: crimson;">*</span></strong>
+                                        </div>
+
+                                        <div class="col-xs-8">
+                                            <div class="form-group">
+                                                <input name="name" type="text" class="form-control" placeholder="Name"
+                                                       required>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xs-4">
+                                            <strong>Email <span style="color: crimson;">*</span></strong>
+                                        </div>
+
+                                        <div class="col-xs-8">
+                                            <div class="form-group">
+                                                <input name="email" type="email" class="form-control"
+                                                       placeholder="Email" required>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xs-4">
+                                            <strong>Subject <span style="color: crimson;">*</span></strong>
+                                        </div>
+
+                                        <div class="col-xs-8">
+                                            <div class="form-group">
+                                                <input name="subject" type="text" class="form-control"
+                                                       placeholder="Subject" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-4">
+                                            <strong>Quantity <span style="color: crimson;">*</span></strong>
+                                        </div>
+
+                                        <div class="col-xs-8">
+                                            <div class="form-group">
+                                                <input name="quantity" type="text" class="form-control" id="quantity"
+                                                       placeholder="Quantity" required>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xs-4">
+                                            <strong>Attached File</strong>
+                                        </div>
+
+                                        <div class="col-xs-8">
+                                            <div class="form-group">
+                                                <input name="attachment" type="file">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-5">
+                                    <div class="photo" style="border:1px solid #CCC; height:203px;border-radius: 4px">
+                                        <img src="/themes/uscraft/assets/images/bf/bf_modal.png"
+                                             alt="beach_Flags" class="img-responsive">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <strong>Instruction</strong> <br/>
+                                    <textarea name="instruction" class="form-control" rows="4"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="row" style="margin-top:12px;">
+                                <div class="col-xs-6">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input name="emailCopy" type="checkbox">
+                                            Send me a copy
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <input id="btnSend" type="submit" class="btn btn-info btn-xs" value="Send">
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!--End Modal Window-->
+
+    </div> <!--End Corkcoaster Area-->
+</div>
+
+<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>

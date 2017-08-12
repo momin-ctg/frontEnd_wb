@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        .ten_reason {
+            max-width: 200px;
+            height: auto;
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        .ten_reason p {
+            color: #565556;
+            margin: 10px 0 30px 0;
+            font-size: 12px;
+        }
+
+        .reason_logo img {
+            padding-bottom: 30px;
+            max-width: 150px;
+            height: auto;
+            display: inline-block;
+            margin: auto;
+        }
+
+        .hand img {
+            display: inline-block;
+            margin: auto;
+            min-width: 180px;
+
+        }
+
+        .getIdea {
+            max-width: 200px;
+            height: auto;
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        .home_gallery img {
+            display: block;
+            margin: auto;
+        }
+
+        .home_galleryText p {
+
+            color: #6c6a6b;
+            line-height: 1;
+            font-style: italic;
+
+        }
+
+        .colorChart h4 {
+            color: #6c6a6b;
+            font-size: 26px;
+        }
+
+        .color_chartText p {
+            color: #6c6a6b;
+            line-height: 1;
+            font-style: italic;
+            font-size: 12px;
+        }
+
+        .youngPeoples {
+            max-width: 250px;
+            height: auto;
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        .uscraftProduct_video {
+            max-width: 250px;
+            height: auto;
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        /*Start Style For Top Ten Slider*/
+        #homeVideo .bannerImg img {
+            display: inline-block;
+            margin: 0 auto;
+            padding-top: 10px;
+        }
+
+        #homeVideo .close{
+            position: absolute;
+            top: -20px;
+            right: -20px;
+            color: #ffffff;
+            background-color: #333!important;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        #homeVideo .close:focus, #homeVideo .close:hover {
+            text-decoration: none;
+            cursor: pointer;
+            opacity: 1;
+        }
+
+        #homeVideo .carousel-indicators li {
+            background: #757575;
+            border: 1px solid #757575;
+        }
+
+        #homeVideo .carousel-indicators li:hover {
+            background: #ffffff;
+            border: 1px solid #757575;
+        }
+
+        #homeVideo .carousel-indicators {
+            position: absolute;
+            bottom: -20px;
+            left: 50%;
+            z-index: 15;
+            width: 60%;
+            padding-left: 0;
+            margin-left: -30%;
+            text-align: center;
+            list-style: none;
+            margin-top: 20px;
+
+        }
+
+        #homeVideo .item {
+            margin-bottom: 30px;
+            height: 190px;
+        }
+
+        #homeVideo .item h3 {
+            font-weight: 900;
+        }
+
+        /*End Style For Top Ten Slider*/
+
+    </style>
+
+</head>
+<body style="background: #f2f2f2">
+
+
+<div class="container">
+    <div class="row">
+
+
+        <div class="col-md-4 col-md-offset-3">
+            <a data-toggle="modal" data-target="#homeVideo">
+                <div class="ten_reason text-center" style="background: #ffffff">
+                    <div class="hand">
+                        <img class="img-responsive" src="hand.jpg" alt="">
+                    </div>
+                    <p>Top 10 Reasons to Choose US.</p>
+                    <div class="reason_logo">
+                        <img class="img-responsive" src="uscraft_logoBanner.png" alt="uscraft">
+                    </div>
+                </div>
+            </a>
+        </div>
+
+
+        <div class="clearfix" style="margin:10px auto"></div>
+
+
+        <div class="col-md-4 col-md-offset-3">
+            <div class="ten_reason" style="background: #ffffff">
+                <h4>
+                    GET 100pcs <br/>FREE Wristbands
+                </h4>
+
+                <div class="hand text-center">
+                    <img class="img-responsive" src="freeWb.jpg" alt="">
+                </div>
+
+                <p class="text-center">Order 100pcs or More</p>
+            </div>
+        </div>
+
+
+        <div class="clearfix" style="margin:10px auto"></div>
+
+
+        <div class="col-md-4 col-md-offset-3">
+            <div class="ten_reason" style="background: #ffffff">
+
+                <div class="hand text-center">
+                    <img class="img-responsive" src="discount.jpg" alt="">
+                </div>
+
+                <p><span style="color: #f8124d;font-weight: bold;font-size: 24px">Only</span><br/><span
+                        style="color:#61a053;font-weight: bold;">For today</span><span>Shop Now</span></p>
+            </div>
+        </div>
+
+
+        <div class="clearfix" style="margin:10px auto"></div>
+
+        <div class="col-md-4 col-md-offset-3">
+
+
+            <div class="getIdea" style="background: #ffffff">
+
+                <div class="text-center">
+                    <h4 style="color:#6c6b6c;font-size: 26px;">Get Idea</h4>
+                </div>
+
+                <div class="home_child text-center" style="padding: 10px">
+                    <img class="img-responsive" src="home_child.png" alt="">
+                </div>
+
+                <div class="text-center">
+                    <p>Get some idea from <br/> our pre-made design</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="clearfix" style="margin:10px auto"></div>
+
+        <div class="col-md-4 col-md-offset-3">
+
+
+            <div class="getIdea" style="background: #ffffff">
+
+
+                <div class="home_gallery text-center" style="padding: 10px">
+                    <img class="img-responsive" src="home_gallery.png" alt="uscraft_gallery">
+                </div>
+
+                <div class="home_galleryText text-center">
+                    <p>Browse our photo gallery <br/> 1000 of pictures, You may Get your new idea</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="clearfix" style="margin:10px auto"></div>
+
+
+        <div class="col-md-4 col-md-offset-3">
+
+
+            <div class="getIdea" style="background: #ffffff">
+
+                <div class="colorChart text-center">
+                    <h4>Color Chart</h4>
+                </div>
+
+                <div class="home_gallery text-center" style="padding: 10px">
+                    <img class="img-responsive" src="color.png" alt="uscraft_gallery">
+                </div>
+
+                <div class="color_chartText text-center">
+                    <p>Find your color from Thousand <br/> of colors, You can advise us <br/> the color code.We will
+                        match your color.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="clearfix" style="margin:10px auto"></div>
+
+        <div class="col-md-4 col-md-offset-3">
+
+
+            <div class="youngPeoples" style="background: #ffffff">
+
+                <div class="home_gallery text-center" style="padding: 10px">
+                    <img class="img-responsive" src="uscraft_peoples.png" alt="uscraft_gallery">
+                </div>
+
+                <div class="color_chartText text-center">
+                    <p>Read story about 1000 Satisfied <br/> clients. They said more than "Thank You"</p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="clearfix" style="margin:10px auto"></div>
+
+        <div class="col-md-4 col-md-offset-3">
+
+
+            <div class="uscraftProduct_video" style="background: #ffffff">
+
+                <div class="productVideo_head text-center">
+                    <h4>Watch Product Video</h4>
+                </div>
+                <div class="home_gallery text-center" style="padding: 10px">
+                    <img class="img-responsive" src="videoPoster.png" alt="uscraft_gallery">
+                </div>
+
+                <div class="color_chartText text-center">
+                    <p>Product description Video will<br/> Help you to choose right product.</p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!--Start Modal for Top Ten Reason-->
+        <div id="homeVideo" class="modal fade" role="dialog" style="margin-top: 100px;">
+            <div class="modal-dialog" style="border:10px solid #000000">
+
+                <div class="modal-content" style="border-radius: 0">
+                    <div class="modal-header" style="background: #ffffff;border-bottom: none;">
+                        <button type="button" class="close" data-dismiss="modal" style="opacity: 1;">&times;</button>
+                        <h4 class="modal-title"
+                            style="padding-bottom:10px;font-weight: 900;font-size: 50px;line-height: 1.2; border-bottom: 6px solid #000000">
+                            TOP 10 REASON <span
+                                style="display: inline-block;position:relative;top:12px;right:20px;float:right"><img
+                                class="img-responsive"
+                                src="banner/uscraft_logo.png"
+                                alt="us_craft"></span>
+                        </h4>
+                    </div>
+                    <div class="modal-body"
+                         style="background: #ffffff;margin-bottom: 10px;padding-top: 0;margin-top: -15px">
+                        <div class="row">
+                            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                                    <li data-target="#myCarousel" data-slide-to="4"></li>
+                                    <li data-target="#myCarousel" data-slide-to="5"></li>
+                                    <li data-target="#myCarousel" data-slide-to="6"></li>
+                                    <li data-target="#myCarousel" data-slide-to="7"></li>
+                                    <li data-target="#myCarousel" data-slide-to="8"></li>
+                                    <li data-target="#myCarousel" data-slide-to="9"></li>
+                                </ol>
+
+                                <div class="carousel-inner">
+                                    <!--<div class="item active">-->
+                                        <!--<div class="row">-->
+                                            <!--<div class="col-md-10 col-md-offset-1">-->
+                                                <!--<div class="row">-->
+                                                    <!--<div class="col-sm-10 col-sm-offset-1">-->
+                                                        <!--<div class="topTen_heading">-->
+                                                            <!--<h3 style="font-size:20px">USCraft is Important to Our-->
+                                                                <!--Economy </h3>-->
+                                                            <!--<p>During times of uncertainty in the global market, it is-->
+                                                                <!--becoming increasingly important for the American people-->
+                                                                <!--to invest in and buy American. Buying from American-->
+                                                                <!--companies is patriotic, and further helps to contribute-->
+                                                                <!--to a more stable future for the entire country through-->
+                                                                <!--the support-->
+                                                                <!--of our local businesses.</p>-->
+                                                            <!--<p> Supporting local businesses reinforces the strength of-->
+                                                                <!--local communities. This strengthens our Nation from the-->
+                                                                <!--inside out. It provides the best solution for building-->
+                                                                <!--our-->
+                                                                <!--National economy by building the most solid foundation-->
+                                                                <!--imaginable.-->
+                                                            <!--</p>-->
+                                                        <!--</div>-->
+                                                    <!--</div>-->
+                                                <!--</div>-->
+                                            <!--</div>-->
+                                        <!--</div>-->
+
+                                    <!--</div>-->
+                                    <div class="item active">
+                                        <div class="row">
+                                            <div class="col-md-10 col-md-offset-1">
+                                                <div class="row">
+                                                    <div class="col-sm-4 col-xs-6">
+                                                        <div class="bannerImg">
+                                                            <img src="banner/topTen00.png"
+                                                                 alt="lowest Price">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-8 col-xs-6">
+                                                        <h3>1. Provides Job For Future Generations</h3>
+                                                        <p>Our future generations matter, Jobs for our children and
+                                                            grandchildren are important so that they can build a
+                                                            life
+                                                            for
+                                                            themselves and provide for their families. Buying
+                                                            USCraft is
+                                                            one
+                                                            step forward in believing in a better tomorrow for
+                                                            generations
+                                                            to
+                                                            come.</p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="item">
+                                        <div class="row">
+                                            <div class="col-md-10 col-md-offset-1">
+                                                <div class="row">
+                                                    <div class="col-sm-4 col-xs-6">
+                                                        <div class="bannerImg">
+                                                            <img src="banner/topTen11.png"
+                                                                 alt="lowest Price">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-8 col-xs-6">
+                                                        <h3>2. Faster Production and Delivery</h3>
+                                                        <p>your hands as early as possible.your orders. Which in turn
+                                                            means its also in orders to be completed before we start on
+                                                            wait for the production of other companies line. Meaning our
+                                                            customers don’t need to We at USCraft LLC have our own
+                                                            production </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="item">
+                                        <div class="row">
+                                            <div class="col-md-10 col-md-offset-1">
+                                                <div class="row">
+                                                    <div class="col-sm-4 col-xs-6">
+                                                        <div class="bannerImg">
+                                                            <img src="banner/topTen22.png"
+                                                                 alt="lowest Price">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-8 col-xs-6">
+                                                        <h3>3. Better for the Environment</h3>
+                                                        <p>Our process allows manufacturing to lean toward cleaner more
+                                                            eco-friendly processes. We can be sure that we are doing our
+                                                            part to contribute to a cleaner environment for our
+                                                            generation, not to mention the generations to come.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="item">
+                                        <div class="row">
+                                            <div class="col-md-10 col-md-offset-1">
+                                                <div class="row">
+                                                    <div class="col-sm-4 col-xs-6">
+                                                        <div class="bannerImg">
+                                                            <img src="banner/topTen33.png"
+                                                                 alt="lowest Price">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-8 col-xs-6">
+                                                        <h3>4. Lowest Overall Cost</h3>
+                                                        <p>Since USCraft is the manufacturer, we don’t need to raise our
+                                                            prices superfluously and the savings go to you the buyer. If
+                                                            we cant get you the best price for quality of goods ordered
+                                                            we don’t deserve your business.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="item">
+                                        <div class="row">
+                                            <div class="col-md-10 col-md-offset-1">
+                                                <div class="row">
+                                                    <div class="col-sm-4 col-xs-6">
+                                                        <div class="bannerImg">
+                                                            <img src="banner/topTen44.png"
+                                                                 alt="lowest Price">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-8 col-xs-6">
+                                                        <h3>5. Easy Online Website</h3>
+                                                        <p>Our website is designed to be easy to use by both businesses
+                                                            and customers.
+                                                            We have programmed the website with all of the default
+                                                            configurations needed to get started. Unlike many other
+                                                            products, you do not need an army of consultants to get
+                                                            started.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="item">
+                                        <div class="row">
+                                            <div class="col-md-10 col-md-offset-1">
+                                                <div class="row">
+                                                    <div class="col-sm-4 col-xs-6">
+                                                        <div class="bannerImg">
+                                                            <img src="banner/topTen55.png"
+                                                                 alt="lowest Price">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-8 col-xs-6">
+                                                        <h3>6. Quality of Goods</h3>
+                                                        <p>USCraft is quality, excellent craftsmanship and a superior
+                                                            product. We only use the highest quality materials to make
+                                                            our products. Our goal is to make our customers happy with
+                                                            their purchase so we can be great business partners for the
+                                                            foreseeable future.
+
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="item">
+                                        <div class="row">
+                                            <div class="col-md-10 col-md-offset-1">
+                                                <div class="row">
+                                                    <div class="col-sm-4 col-xs-6">
+                                                        <div class="bannerImg">
+                                                            <img src="banner/topTen66.png"
+                                                                 alt="lowest Price">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-8 col-xs-6">
+                                                        <h3>7.Quality Customer Service</h3>
+                                                        <p>We really care about our products. If you run into any
+                                                            problems you can contact us doing anything and everything we
+                                                            can to help you resolve it quickly and
+
+                                                            Effortlessly. We are here 24 hours a day to help with your
+                                                            needs.
+                                                            <br/><em>Feel free to Contact us anytime.</em>
+
+
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="item">
+                                        <div class="row">
+                                            <div class="col-md-10 col-md-offset-1">
+                                                <div class="row">
+                                                    <div class="col-sm-4 col-xs-6">
+                                                        <div class="bannerImg">
+                                                            <img src="banner/topTen77.png"
+                                                                 alt="lowest Price">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-8 col-xs-6">
+                                                        <h3>8. Free Artwork Assistance</h3>
+                                                        <p>If you feel the need to see what your product might look like
+                                                            before purchase just let us know and well be happy to assist
+                                                            you. Unlike other companies USCraft provides free artwork
+                                                            assistance to make your purchase easier. If we ask for your
+                                                            payment before you’re happy let us know, we may have been
+                                                            hacked.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="item">
+                                        <div class="row">
+                                            <div class="col-md-10 col-md-offset-1">
+                                                <div class="row">
+                                                    <div class="col-sm-4 col-xs-6">
+                                                        <div class="bannerImg">
+                                                            <img src="banner/topTen88.png"
+                                                                 alt="lowest Price">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-8 col-xs-6">
+                                                        <h3>9. Variety of Products</h3>
+                                                        <p>We carry a variety of products from custom silicon
+                                                            wristbands, custom convention tents to tote bags and pins to
+                                                            help your promotional event go smoothly. If we don’t have
+                                                            what you need on our website just lets us know via email and
+                                                            we’ll see if we can make that item for you.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="item">
+                                        <div class="row">
+                                            <div class="col-md-10 col-md-offset-1">
+                                                <div class="row">
+                                                    <div class="col-sm-4 col-xs-6">
+                                                        <div class="bannerImg">
+                                                            <img src="banner/topTen99.png"
+                                                                 alt="lowest Price">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-8 col-xs-6">
+                                                        <h3>10. Secure Easy Ordering</h3>
+                                                        <p> Orders can be placed online using either a credit card or
+                                                            PayPal. All transactions are SSL-secured and guarantee your
+                                                            privacy. You can also order by check, wire transfer, or with
+                                                            a corporate purchase order.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+
+                                <a style="background-image:none;" class="left carousel-control" href="#myCarousel" data-slide="prev">
+                                    <span class="glyphicon" style="position:relative;top:25%">
+                                        <svg>
+                                            <use x="20" y="60" xlink:href="#leftArrow"></use>
+                                        </svg>
+                                    </span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+
+                                <a style="background-image:none;" class="right carousel-control" href="#myCarousel" data-slide="next">
+                                    <span class="glyphicon" style="position:relative;top:25%">
+                                        <svg>
+                                            <use x="35" y="60" xlink:href="#rightArrow"></use>
+                                        </svg>
+                                    </span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <!--End Modal for top ten reason-->
+
+
+        <!--All SVG Icon Here-->
+        <div style="display:none">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="30px" height="30px" viewBox="0 0 60 60" enable-background="new 0 0 60 60" xml:space="preserve">
+                <g id="rightArrow"><polygon fill="#828182" points="18.924,14.761 11.659,28.875 11.659,0.96 "/></g>
+                <g id="leftArrow"><polygon fill="#828182" points="11.658,14.761 18.924,28.875 18.924,0.96 "/></g>
+            </svg>
+
+        </div>
+        <!--End All SVG Icon Here-->
+
+    </div>
+</div>
+
+
+<script
+        src="https://code.jquery.com/jquery-2.1.1.js"
+        integrity="sha256-FA/0OOqu3gRvHOuidXnRbcmAWVcJORhz+pv3TX2+U6w="
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
