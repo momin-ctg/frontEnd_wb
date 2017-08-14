@@ -69,7 +69,7 @@
         }
 
         .colorChart h4 {
-            color: #6c6a6b;
+            color: #6c6b6c;
             font-size: 26px;
         }
 
@@ -197,13 +197,13 @@
             height: 40px;
             float: right;
             background-color: transparent;
-            border: 0px;
+            border: 0;
             padding: 10px;
             text-transform: uppercase;
             font-family: "Roboto", Arial, sans-serif;
             font-size: 1em;
             position: relative;
-            outline: 0px;
+            outline: 0;
         }
 
 
@@ -225,7 +225,7 @@
                         <h4>Color Chart</h4>
                     </div>
 
-                    <div class="home_gallery text-center" style="padding: 10px">
+                    <div class="text-center" style="padding: 10px">
                         <img class="img-responsive" src="color.png" alt="uscraft_gallery">
                     </div>
 
@@ -234,6 +234,7 @@
                             match your color.</p>
                     </div>
                 </div>
+
             </a>
         </div>
 
@@ -265,7 +266,7 @@
 
                                 <div class="colorArea" style="border:1px solid #dddddd">
                                     <div class="pmsColor_text text-center">
-                                        <p> {{color.code}} </p>
+                                        <p style="font-size: 10px;font-weight:bold;"> {{color.code}} </p>
                                     </div>
                                     <div class="pmsColor_Support" ng-style=" { 'background': '{{color.hcolor}}' } "
                                          style="width: 100%; height: 50px; display:block;">
