@@ -3988,7 +3988,7 @@ var pmsFile = {
         {
             "code": "732",
             "hcolor": "#60330a"
-        },
+        }
 
 
     ]
